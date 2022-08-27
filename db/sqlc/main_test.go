@@ -13,7 +13,7 @@ var testQueries *Queries
 
 const (
 	dbDriver = "postgres"
-	dbSource = "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable"
+	dbSource = "postgres://root:secret@localhost:5432/simple_bank?sslmode=disable"
 )
 
 func TestMain(m *testing.M) {
