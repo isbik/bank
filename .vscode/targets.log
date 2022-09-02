@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 28 04:22:25 2022
+# Make data base, printed on Fri Sep  2 00:29:22 2022
 
 # Variables
 
@@ -65,6 +67,8 @@ MANDATORY_PATH = /usr/share/gconf/pantheon.mandatory.path
 # environment
 XDG_DATA_DIRS = /usr/share/gnome:/usr/share/pantheon:/home/dmitry/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
@@ -85,13 +89,13 @@ GSETTINGS_SCHEMA_DIR = /home/dmitry/data
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/dmitry/go/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GOLANG_EXECUTABLE = go
 # environment
-SESSION_MANAGER = local/HKDWXX3243cb19:@/tmp/.ICE-unix/1088,unix/HKDWXX3243cb19:/tmp/.ICE-unix/1088
+SESSION_MANAGER = local/HKDWXX3243cb19:@/tmp/.ICE-unix/1094,unix/HKDWXX3243cb19:/tmp/.ICE-unix/1094
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -117,7 +121,7 @@ XDG_SESSION_DESKTOP = pantheon
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 32143
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2890
 # automatic
 %F = $(notdir $%)
 # environment
@@ -131,13 +135,13 @@ QT_QPA_PLATFORMTHEME = gtk3
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1240
+SSH_AGENT_PID = 1251
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = Pantheon
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+GOMODCACHE = /home/dmitry/go/pkg/mod
 # environment
 HOME = /home/dmitry
 # environment
@@ -169,7 +173,7 @@ QT_IM_MODULE = ibus
 # environment
 SHLVL = 0
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-626022cf-9942-4f2c-8dba-c59c1c0bcb1a.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-85b59236-fafb-47dd-9ea3-686ea9f88d81.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -213,8 +217,6 @@ GDK_BACKEND = x11
 # environment
 LC_PAPER = en_US.UTF-8
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # environment
 DEFAULTS_PATH = /usr/share/gconf/pantheon.default.path
@@ -245,9 +247,9 @@ LC_ADDRESS = en_US.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 32143
+VSCODE_PID = 2890
 # variable set hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=11/143=8%
+# Load=118/1024=12%, Rehash=0, Collisions=12/143=8%
 
 # Pattern-specific Variable Values
 
@@ -255,9 +257,9 @@ VSCODE_PID = 32143
 
 # Directories
 
-# . (device 64768, inode 22163052): 9 files, no impossibilities.
+# . (device 64768, inode 22163052): 14 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -266,8 +268,9 @@ VSCODE_PID = 32143
 # Files
 
 postgres:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
 	docker run --name=postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:12-alpine
@@ -279,40 +282,47 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-.PHONY:
- 
-make: *** No rule to make target 'all'.  Stop.
-
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server mock
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
-	postgres createdb dropdb migrateup migratedown sqlc test
 
 sqlc:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 17):
+ 
 	sqlc generate
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-19 20:39:11.016133037
+#  Last modified 2022-09-01 21:16:40.249635864
 #  File has been updated.
 #  Successfully updated.
 
-test:
+server:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	go run main.go
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 20):
 	go test -v -cover ./...
 
 createdb:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 5):
 	docker exec -it postgres12 createdb --username=root --owner=root simple_bank
@@ -324,40 +334,51 @@ createdb:
 #  File has not been updated.
 
 dropdb:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
 	docker exec -it postgres12 dropdb simple_bank
 
 migrateup:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 11):
 	migrate -path=db/migration -database="postgres://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
 migratedown:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 14):
 	migrate -path=db/migration -database="postgres://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose down
 
+mock:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 26):
+	 mockgen -package mockdb -build_flags=--mod=mod -package mockdb -destination db/mock/store.go github.com/isbik/bank/db/sqlc Store
+
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/22=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/33=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 173 B / avg = 7 B
-# current buf: size = 8162 B / used = 173 B / count = 22 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 218 B / avg = 7 B
+# current buf: size = 8162 B / used = 218 B / count = 29 / avg = 7 B
 
-# strcache performance: lookups = 34 / hit rate = 35%
+# strcache performance: lookups = 52 / hit rate = 44%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/34=3%
-# Finished Make data base on Sun Aug 28 04:22:25 2022
+# Load=29/8192=0%, Rehash=0, Collisions=1/52=2%
+# Finished Make data base on Fri Sep  2 00:29:22 2022
 
  

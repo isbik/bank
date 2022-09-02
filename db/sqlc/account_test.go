@@ -2,8 +2,9 @@ package bank
 
 import (
 	"context"
-	"simplebank/util"
 	"testing"
+
+	"github.com/isbik/bank/util"
 
 	"github.com/stretchr/testify/require"
 )
