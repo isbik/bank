@@ -1,384 +1,368 @@
-make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
 
-# GNU Make 4.2.1
-# Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2016 Free Software Foundation, Inc.
-# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-# This is free software: you are free to change and redistribute it.
-# There is NO WARRANTY, to the extent permitted by law.
+# This program built for i386-pc-mingw32
 
-# Make data base, printed on Fri Sep  2 00:29:22 2022
+# ���� ������ Make, ���������� Sat Sep 03 01:20:51 2022
 
-# Variables
+# ����������
 
-# automatic
+# ��������������
 <D = $(patsubst %/,%,$(dir $<))
-# automatic
+# ��������������
 ?F = $(notdir $?)
-# environment
-PAPERSIZE = letter
-# environment
-DESKTOP_SESSION = pantheon
-# default
-.SHELLFLAGS := -c
-# environment
-PROVIDE_FULLSTACK_ACTION = true
-# environment
-XDG_SESSION_CLASS = user
-# environment
-XDG_SESSION_TYPE = x11
-# environment
-VSCODE_LOG_NATIVE = false
-# automatic
+# Make-����
+MAKEFLAGS = Rrqp
+# ��������������
 ?D = $(patsubst %/,%,$(dir $?))
-# automatic
+# ��������������
 @D = $(patsubst %/,%,$(dir $@))
-# environment
-XAUTHORITY = /home/dmitry/.Xauthority
-# environment
-GDMSESSION = pantheon
-# environment
-XMODIFIERS = @im=ibus
-# makefile
-CURDIR := /home/dmitry/Desktop/golang/backend-master
-# makefile
-SHELL = /bin/sh
-# environment
-GDM_LANG = en_US
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
-# environment
-_ = /usr/share/code/code
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-pantheon:/etc/xdg
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
-# automatic
+# ���������� � �����
+HOMEDRIVE = C:
+# ��������������
 @F = $(notdir $@)
-# environment
-GIO_LAUNCHED_DESKTOP_FILE = /etc/xdg/autostart/plank.desktop
-# 'override' directive
-GNUMAKEFLAGS := 
-# environment
-MAKELEVEL := 0
-# environment
-MANDATORY_PATH = /usr/share/gconf/pantheon.mandatory.path
-# environment
-XDG_DATA_DIRS = /usr/share/gnome:/usr/share/pantheon:/home/dmitry/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
-# environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-LESSOPEN = | /usr/bin/lesspipe %s
-# environment
-LC_NAME = en_US.UTF-8
-# environment
-VSCODE_CWD = /home/dmitry
-# environment
-GOPROXY = https://proxy.golang.org,direct
-# environment
-QT_STYLE_OVERRIDE = adwaita
-# environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
-# environment
-GSETTINGS_SCHEMA_DIR = /home/dmitry/data
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/dmitry/go/bin
-# environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
-# environment
-GOLANG_EXECUTABLE = go
-# environment
-SESSION_MANAGER = local/HKDWXX3243cb19:@/tmp/.ICE-unix/1094,unix/HKDWXX3243cb19:/tmp/.ICE-unix/1094
-# environment
-XDG_RUNTIME_DIR = /run/user/1000
-# environment
-THREE_SCALE_USER_TOKEN = 207c527cfc2a6b8dcf4fa43ad7a976da
-# environment
-GOPATH = /home/dmitry/go
-# environment
-XDG_MENU_PREFIX = gnome-
-# environment
-VSCODE_LOG_STACK = false
-# environment
-ELECTRON_RUN_AS_NODE = 1
-# default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
-# environment
-UUID = d2a8a262-6369-47aa-9851-1e16e4d1c605
-# environment
-XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/dmitry
-# environment
-LS_COLORS = 
-# environment
-XDG_SESSION_DESKTOP = pantheon
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2890
-# automatic
-%F = $(notdir $%)
-# environment
-DISPLAY = :0
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-PWD = /home/dmitry/Desktop/golang/backend-master
-# environment
-QT_QPA_PLATFORMTHEME = gtk3
-# default
-.LOADED := 
-# environment
-SSH_AGENT_PID = 1251
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Pantheon
-# environment
-GTK_MODULES = gail:atk-bridge
-# environment
-GOMODCACHE = /home/dmitry/go/pkg/mod
-# environment
-HOME = /home/dmitry
-# environment
-LESSCLOSE = /usr/bin/lesspipe %s %s
-# environment
-VSCODE_CODE_CACHE_PATH = /home/dmitry/.config/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
-# environment
-LOGNAME = dmitry
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# automatic
-+F = $(notdir $+)
-# environment
-TELEMETRY_ID = 08f18031-6254-47b0-8a56-072dbed304b3
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
-# automatic
+# ��������������
 ^D = $(patsubst %/,%,$(dir $^))
-# environment
-LC_TIME = en_US.UTF-8
-# default
+# Make-����
+CURDIR := c:/Users/root/Desktop/projects/bank
+# �� ���������
+SHELL := sh.exe
+# ���������� � �����
+WINDIR = C:\Windows
+# ���������� � �����
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
+# ���������� � �����
+ONEDRIVE = C:\Users\root\OneDrive
+# ���������� � �����
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# Make-���� (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# ���������� � �����
+TMP = C:\Users\root\AppData\Local\Temp
+# ���������� � �����
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# ���������� � �����
+PROGRAMW6432 = C:\Program Files
+# ���������� � �����
+PROGRAMDATA = C:\ProgramData
+# ���������� � �����
+VSCODE_CWD = C:\Users\root\Desktop\projects
+# ���������� � �����
+GOPROXY = https://proxy.golang.org,direct
+# ���������� � �����
+PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Go\bin;C:\Users\root\AppData\Roaming\npm\node_modules;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Kubernetes\Minikube;C:\ProgramData\chocolatey\bin;C:\Users\root\AppData\Roaming;C:\Users\root\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\root\AppData\Local\Programs\Python\Python310\;C:\Users\root\AppData\Local\Microsoft\WindowsApps;C:\Users\root\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\root\go\bin;C:\Program Files\JetBrains\GoLand 2021.3.2\bin;;C:\Users\root\AppData\Roaming\npm\node_modules;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Kubernetes;C:\Users\root\AppData\Roaming\npm;C:\Program Files\helm;C:\Program Files\klocal;
+# ���������� � �����
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# ���������� � �����
+CHOCOLATEYLASTPATHUPDATE = 132992407331986294
+# ���������� � �����
+PROCESSOR_ARCHITECTURE = x86
+# ���������� � �����
+USERPROFILE = C:\Users\root
+# ���������� � �����
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# ���������� � �����
+ALLUSERSPROFILE = C:\ProgramData
+# ���������� � �����
+GOPATH = C:\Users\root\go
+# ���������� � �����
+NUMBER_OF_PROCESSORS = 16
+# ���������� � �����
+ELECTRON_RUN_AS_NODE = 1
+# �� ���������
+.FEATURES := target-specific order-only second-expansion else-if archives
+# ��������������
+%F = $(notdir $%)
+# ���������� � �����
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2260_AWDJCLLLYCTRESIS
+# ���������� � �����
+COMPUTERNAME = DESKTOP-6F1609P
+# ���������� � �����
+PROGRAMFILES = C:\Program Files (x86)
+# ���������� � �����
+GOLAND = C:\Program Files\JetBrains\GoLand 2021.3.2\bin;
+# ���������� � �����
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# ���������� � �����
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# ���������� � �����
+USERNAME = root
+# ���������� � �����
+PUBLIC = C:\Users\Public
+# ���������� � �����
+GOMODCACHE = C:\Users\root\go\pkg\mod
+# ���������� � �����
+VSCODE_CODE_CACHE_PATH = C:\Users\root\AppData\Roaming\Code\CachedData\784b0177c56c607789f9638da7b6bf3230d47a8c
+# ���������� � �����
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# ���������� � �����
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# ���������� � �����
+LOGONSERVER = \\DESKTOP-6F1609P
+# ���������� � �����
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# ���������� � �����
+USERDOMAIN = DESKTOP-6F1609P
+# �� ���������
 MAKE = $(MAKE_COMMAND)
-# default
+# �� ���������
 MAKECMDGOALS := all
-# environment
-QT_IM_MODULE = ibus
-# environment
-SHLVL = 0
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-85b59236-fafb-47dd-9ea3-686ea9f88d81.sock
-# default
-MAKE_VERSION := 4.2.1
-# environment
-USER = dmitry
-# environment
-LC_MONETARY = en_US.UTF-8
-# makefile
+# �� ���������
+MAKE_VERSION := 3.81
+# Make-����
 .DEFAULT_GOAL := postgres
-# environment
-XDG_CURRENT_DESKTOP = Unity
-# automatic
+# ���������� � �����
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# ��������������
 %D = $(patsubst %/,%,$(dir $%))
-# environment
-LC_TELEPHONE = en_US.UTF-8
-# default
-MAKE_COMMAND := make
-# environment
-UTM_SOURCE = vscode
-# default
+# ���������� � �����
+LOCALAPPDATA = C:\Users\root\AppData\Local
+# ���������� � �����
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# �� ���������
+MAKE_COMMAND := make.exe
+# ���������� � �����
+PROCESSOR_ARCHITEW6432 = AMD64
+# �� ���������
 .VARIABLES := 
-# automatic
+# ��������������
 *F = $(notdir $*)
-# environment
-LANGUAGE = en_US
-# environment
-XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
-# environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-5a8a2e64-1.67.0-main.sock
-# makefile
-MAKEFLAGS = pqrR
-# environment
-MFLAGS = -pqrR
-# automatic
+# ���������� � �����
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+# ���������� � �����
+OS = Windows_NT
+# ���������� � �����
+VSCODE_IPC_HOOK = \\.\pipe\c75619f30dc2a129a54de4674fb3c63c-1.71.0-main-sock
+# ���������� � �����
+HOMEPATH = \Users\root
+# ���������� � �����
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# ���������� � �����
+PROMPT = $P$G
+# ���������� � �����
+MFLAGS = -Rrqp
+# ��������������
 *D = $(patsubst %/,%,$(dir $*))
-# automatic
+# ���������� � �����
+SYSTEMROOT = C:\Windows
+# ��������������
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-RECOMMENDER_API_URL = https://gw.api.openshift.io//api/v2
-# environment
-GDK_BACKEND = x11
-# environment
-LC_PAPER = en_US.UTF-8
-# environment
-QT_ACCESSIBILITY = 1
-# environment
-DEFAULTS_PATH = /usr/share/gconf/pantheon.default.path
-# default
+# ��������������
++F = $(notdir $+)
+# ���������� � �����
+APPDATA = C:\Users\root\AppData\Roaming
+# ���������� � �����
+__COMPAT_LAYER = DetectorsAppHealth
+# ���������� � �����
+TEMP = C:\Users\root\AppData\Local\Temp
+# ���������� � �����
+COMSPEC = C:\Windows\system32\cmd.exe
+# �� ���������
 MAKEFILES := 
-# environment
-LC_NUMERIC = en_US.UTF-8
-# automatic
+# ��������������
 <F = $(notdir $<)
-# environment
-LC_MEASUREMENT = en_US.UTF-8
-# environment
+# ���������� � �����
 LC_ALL = C
-# automatic
+# ��������������
 ^F = $(notdir $^)
-# default
+# �� ���������
 SUFFIXES := 
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-LC_IDENTIFICATION = en_US.UTF-8
-# default
-.RECIPEPREFIX := 
-# environment
-LC_ADDRESS = en_US.UTF-8
-# environment
+# ���������� � �����
+SYSTEMDRIVE = C:
+# ���������� � �����
+SESSIONNAME = Console
+# ���������� � �����
+PROCESSOR_REVISION = 7100
+# ���������� � �����
+MAKELEVEL := 0
+# ���������� � �����
 LANG = C
-# environment
-VSCODE_PID = 2890
+# ���������� � �����
+PROCESSOR_LEVEL = 23
+# ���������� � �����
+VSCODE_PID = 2260
+# ���������� � �����
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-6F1609P
 # variable set hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=12/143=8%
+# Load=88/1024=9%, Rehash=0, Collisions=10/108=9%
 
 # Pattern-specific Variable Values
 
-# No pattern-specific variable values.
+# ��� �������� ���������� ��������� ��� �����
 
-# Directories
+# ��������
 
-# . (device 64768, inode 22163052): 14 files, no impossibilities.
+# : ���������� �������� �������� ������� stat.
+# C:\Users\root\AppData\Roaming (���� C:/Users/root/AppData/Roaming, ����� ����������� 1662149912): 39 ������,��� ������������ �����.
+# C:\Program Files\Docker\Docker\resources\bin (���� C:/Program Files/Docker/Docker/resources/bin, ����� ����������� 1654762551): 13 ������,��� ������������ �����.
+# C:\Users\root\AppData\Roaming\npm\node_modules (���� C:/Users/root/AppData/Roaming/npm/node_modules, ����� ����������� 1655495275): 7 ������,��� ������������ �����.
+# C:\Program Files\Go\bin (���� C:/Program Files/Go/bin, ����� ����������� 1642401805): 4 ������,��� ������������ �����.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (���� C:/Windows/System32/WindowsPowerShell/v1.0/, ����� ����������� 1622915292): 31 ������,��� ������������ �����.
+# C:\Windows\System32\Wbem (���� C:/Windows/System32/Wbem, ����� ����������� 1655428224): 171 ������,��� ������������ �����.
+# . (���� c:/Users/root/Desktop/projects/bank, ����� ����������� 1662149610): 14 ������,��� ������������ �����.
+# C:\ProgramData\chocolatey\bin (���� C:/ProgramData/chocolatey/bin, ����� ����������� 1654769980): 15 ������,��� ������������ �����.
+# C:\Program Files\nodejs\ (���� C:/Program Files/nodejs/, ����� ����������� 1654689107): 13 ������,��� ������������ �����.
+# C:\Users\root\AppData\Local\Programs\Python\Python310\ (���� C:/Users/root/AppData/Local/Programs/Python/Python310/, ����� ����������� 1654686381): 18 ������,��� ������������ �����.
+# C:\Users\root\AppData\Local\Programs\Python\Python310\Scripts\ (���� C:/Users/root/AppData/Local/Programs/Python/Python310/Scripts/, ����� ����������� 1654686381): 5 ������,��� ������������ �����.
+# C:\Program Files\Kubernetes (���� C:/Program Files/Kubernetes, ����� ����������� 1654766755): 3 ������,��� ������������ �����.
+# C:\Program Files\JetBrains\GoLand 2021.3.2\bin (���� C:/Program Files/JetBrains/GoLand 2021.3.2/bin, ����� ����������� 1642444802): 29 ������,��� ������������ �����.
+# C:\Users\root\AppData\Local\Programs\Microsoft VS Code\bin (���� C:/Users/root/AppData/Local/Programs/Microsoft VS Code/bin, ����� ����������� 1662118928): 4 ������,��� ������������ �����.
+# C:\Windows\System32\OpenSSH\: ���������� �������� �������� ������� stat.
+# C:\Users\root\AppData\Roaming\npm (���� C:/Users/root/AppData/Roaming/npm, ����� ����������� 1655495274): 21 ������,��� ������������ �����.
+# C:\Windows (���� C:/Windows, ����� ����������� 1661460443): 118 ������,��� ������������ �����.
+# C:\Program Files\helm (���� C:/Program Files/helm, ����� ����������� 1654768635): 5 ������,��� ������������ �����.
+# C:\Users\root\AppData\Local\Microsoft\WindowsApps (���� C:/Users/root/AppData/Local/Microsoft/WindowsApps, ����� ����������� 1662122702): 39 ������,��� ������������ �����.
+# C:\ProgramData\DockerDesktop\version-bin: ���������� �������� �������� ������� stat.
+# C:\Program Files\Kubernetes\Minikube (���� C:/Program Files/Kubernetes/Minikube, ����� ����������� 1654766755): 6 ������,��� ������������ �����.
+# C:\Program Files\Git\cmd (���� C:/Program Files/Git/cmd, ����� ����������� 1642071478): 8 ������,��� ������������ �����.
+# C:\Windows\system32 (���� C:/Windows/system32, ����� ����������� 1662117063): 3048 ������,��� ������������ �����.
+# C:\Program Files\klocal (���� C:/Program Files/klocal, ����� ����������� 1654769309): 3 ������,��� ������������ �����.
+# C:\Users\root\go\bin (���� C:/Users/root/go/bin, ����� ����������� 1661864184): 19 ������,��� ������������ �����.
+# C:\Program Files (x86)\GnuWin32\bin (���� C:/Program Files (x86)/GnuWin32/bin, ����� ����������� 1643617283): 5 ������,��� ������������ �����.
 
-# 14 files, no impossibilities in 1 directories.
+# 3638 ������,��� impossibilities in 27 directories.
 
 # Implicit Rules
 
-# No implicit rules.
+# ������� ������ ���.
 
-# Files
+# �����
 
 postgres:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 2):
 	docker run --name=postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:12-alpine
+	
 
-# Not a target:
+# �� �������� �����:
 all:
-#  Command line target.
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
+#  ����, ���������� �� ��������� ������.
+#  ������������ ����� ������� ������
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 .PHONY: postgres createdb dropdb migrateup migratedown sqlc test server mock
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
 
 sqlc:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 17):
- 
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 17):
 	sqlc generate
+	
 
-# Not a target:
-Makefile:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-01 21:16:40.249635864
-#  File has been updated.
-#  Successfully updated.
+# �� �������� �����:
+.DEFAULT:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
 
 server:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 23):
 	go run main.go
+	
 
 test:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 20):
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 20):
 	go test -v -cover ./...
+	
+
+# �� �������� �����:
+makefile:
+#  ������������ ����� ������� ������
+#  ����� ���������� ��������� 2022-09-03 01:13:30
+#  ���� ��� ��������.
+#  ������� ���������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 createdb:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 5):
 	docker exec -it postgres12 createdb --username=root --owner=root simple_bank
+	
 
-# Not a target:
-.DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+# �� �������� �����:
+.SUFFIXES:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
 
 dropdb:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 8):
 	docker exec -it postgres12 dropdb simple_bank
+	
 
 migrateup:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 11):
 	migrate -path=db/migration -database="postgres://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up
+	
 
 migratedown:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 14):
 	migrate -path=db/migration -database="postgres://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose down
+	
 
 mock:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 26):
-	 mockgen -package mockdb -build_flags=--mod=mod -package mockdb -destination db/mock/store.go github.com/isbik/bank/db/sqlc Store
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 26):
+	mockgen -package mockdb -build_flags=--mod=mod -package mockdb -destination db/mock/store.go github.com/isbik/bank/db/sqlc Store
+	
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/33=0%
-# VPATH Search Paths
+# Load=14/1024=1%, Rehash=0, Collisions=0/34=0%
+# ���� ������ VPATH
 
-# No 'vpath' search paths.
+# �� ��������� ���� ������ `vpath'.
 
-# No general ('VPATH' variable) search path.
+# �� ��������� ����� (���������� `VPATH') ���� ������.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 218 B / avg = 7 B
-# current buf: size = 8162 B / used = 218 B / count = 29 / avg = 7 B
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# strcache performance: lookups = 52 / hit rate = 44%
-# hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=1/52=2%
-# Finished Make data base on Fri Sep  2 00:29:22 2022
+# ������ ���� ������ Make ��������� Sat Sep 03 01:20:51 2022
 
  
+make.exe: *** ��� ������� ��� ������ ���� `all'.  �������.
+
